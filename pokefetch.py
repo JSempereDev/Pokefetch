@@ -87,7 +87,7 @@ if len(lineas2) < len(lineas1):
 
 # Combina las líneas de archivo2 (izquierda) con archivo1 (derecha)
 lineas_modificadas = [
-    linea2.rstrip() + ' ' * (longitud_maxima_archivo2 - longitud_sin_ansi(linea2)) + ' \t' + linea1
+    "  " + linea2.rstrip() + ' ' * (longitud_maxima_archivo2 - longitud_sin_ansi(linea2)) + ' \t' + linea1
     for linea1, linea2 in zip(lineas1, lineas2)
 ]
 
