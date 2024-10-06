@@ -24,6 +24,10 @@ if len(sys.argv) > 1:
     except ValueError:
         pokemon = random.randint(1, 905)
 
+# -------------------------------------------------
+shiny = ""
+if random.randint(1, 5) == 5:
+    shiny = "-s"
 
 # -------------------------------------------------
 command = "touch " + sprite + " " + neofetch + " " + combinado
